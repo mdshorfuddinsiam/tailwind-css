@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .font-bebas-neue {
+            font-family: "Bebas Neue", sans-serif;
+        }
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="font-roboto">
 
     <header class="bg-[#FFFBF0] pl-4">
         <!-- Navbar Start -->
@@ -14,14 +29,14 @@
 
         </nav>
         <!-- Banner Start -->
-        <div class="md:flex">
+        <div class="md:flex items-center justify-around">
             <div class="">
-                <h1 class="text-7xl uppercase">
+                <h1 class="text-7xl uppercase font-bebas-neue mb-2">
                     <span class="text-orange-400">Be the Penguins</span>
                     <br> 
                     <span class="text-stone-800">of Winter</span>
                 </h1>
-                <p>
+                <p class="w-4/5 mb-2">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
                 <button class="py-4 px-8 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium">
@@ -37,7 +52,26 @@
         </div>
     </header>
     <main>
-
+        <!-- Women Jacket -->
+        <section>
+            <h2 class="text-5xl uppercase">W0Man Jacket</h2>
+            <div class="">
+                <div class="p-4">
+                    <img src="images/jacket-1.png" alt="">
+                    <h5 class="text-2xl font-bold">Yellow Coat Jacket</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="flex">
+                        <h3 class="text-[#FABE4C] font-black text-4xl">$234</h3>
+                        <button class="py-4 px-8 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
