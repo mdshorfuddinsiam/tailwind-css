@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Tailwind v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <title>Overlap Layout</title>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- ===== Arrival Section ===== -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+
+      <h2 class="text-green-700 font-semibold text-lg mb-8">
+        Arrival & Offers
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-green-900 rounded-2xl p-6 text-white">
+          Offer Card
+        </div>
+
+        <div class="bg-blue-900 rounded-2xl p-6 text-white">
+          Offer Card
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== Green Section Wrapper (IMPORTANT) ===== -->
+  <section class="relative bg-green-600 pt-32 pb-16">
+
+    <!-- ===== Overlap Grocery Box ===== -->
+    <div
+      class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2
+             w-[92%] md:w-[80%] lg:w-[65%]">
+
+      <div class="bg-stone-200 rounded-2xl p-8 md:p-12 shadow-xl
+                  grid md:grid-cols-2 items-center gap-6">
+
+        <div class="flex justify-center">
+          <img src="https://i.ibb.co/Z6n0P6G8/3.webp"
+               class="h-48 object-contain">
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-bold mb-3">
+            Get Grocery News!
+          </h2>
+
+          <p class="text-gray-600 mb-6">
+            Exclusive access to weekly picks and deals.
+          </p>
+
+          <input
+            type="email"
+            placeholder="Enter email..."
+            class="w-full px-4 py-3 rounded-lg bg-white mb-4 outline-none"
+          >
+
+          <button class="bg-green-700 text-white px-6 py-2 rounded-lg">
+            Subscribe
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ===== Footer Content ===== -->
+    <div class="max-w-6xl mx-auto px-4 mt-32 text-white">
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div>
+          <h3 class="text-xl font-semibold mb-2">
+            nature's platter
+          </h3>
+          <p class="text-green-100 text-sm">
+            Discover a world of treats and essentials.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-3">Product</h4>
+          <ul class="space-y-2 text-green-100">
+            <li>Services</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-3">Follow Us</h4>
+          <div class="flex gap-4 text-xl">
+            <span>📘</span>
+            <span>📷</span>
+            <span>💼</span>
+            <span>▶</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
